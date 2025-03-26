@@ -9,7 +9,7 @@ app = FastAPI()
 
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-client = OpenAI(api_key="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")
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 class QuestionRequest(BaseModel):
     topic: str  # e.g., "Probability"
